@@ -1,0 +1,26 @@
+
+		{/*Collapse Div*/}
+			<div id={`collapse${props.index}`} className="collapse" role="tabpanel" aria-labelledby={`heading${props.index}`}>
+			{/*Card IMG*/}
+			<img className="card-img-top" src="./img/Fried Chik'n-edit1.jpg" />
+			{/*Card Block*/}
+			<div className="card-block">
+				<p className="card-text">
+					
+				</p>
+					{/* Ingredients */}
+				<h3>Ingredients</h3>
+				<Ingredients parts={props.recipe.ingredients} />
+					{/* Steps */}
+				<h3>Steps</h3>
+				<Steps levels={props.recipe.steps} />
+				
+				<a href="#" className="btn btn-primary">Print Recipe</a>
+				
+				<a className="btn btn-success" type="button" data-toggle="modal" data-target="#editRecipe"> Edit Recipe </a>
+				
+				<a href="#" className="btn btn-danger">Delete Recipe</a>
+			</div>
+			{/*End Card Block*/}
+		</div>
+		{/*End Collapsable*/}
